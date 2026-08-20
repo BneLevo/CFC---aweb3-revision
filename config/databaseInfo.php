@@ -3,4 +3,5 @@
 define('DB_HOST', 'localhost');
 define('DB_NAME', 'horaire-eleve');
 define('DB_USER', 'root');
-define('DB_PASS', ''); 
+define('DB_PASSWORD', ''); 
+define('DB_PORT', 3306);
