@@ -1,0 +1,5 @@
+RewriteEngine On
+
+RewriteRule ^api/classes/?$ api/classes.php [L,QSA]
+
+RewriteRule ^api/cours/?$ api/cours.php [L,QSA]
