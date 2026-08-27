@@ -1,3 +1,13 @@
+CREATE DATABASE IF NOT EXISTS horaire
+CHARACTER SET utf8mb4
+COLLATE utf8mb4_unicode_ci;
+
+USE horaire;
+
+DROP TABLE IF EXISTS creneaux;
+DROP TABLE IF EXISTS cours;
+DROP TABLE IF EXISTS classes;
+
 CREATE TABLE classes (
     id INT AUTO_INCREMENT PRIMARY KEY,
     nom VARCHAR(50) NOT NULL UNIQUE,
@@ -19,6 +29,6 @@ CREATE TABLE creneaux (
     heure_fin TIME NOT NULL,
     salle VARCHAR(20) NOT NULL,
 
-    FOREIGN KEY (classe_id) REFERENCES classes(id),
-    FOREIGN KEY (cours_id) REFERENCES cours(id)
+    FOREIGN KEY (classe_id) REFERENCES classes(id) ON DELETE CASCADE,
+    FOREIGN KEY (cours_id) REFERENCES cours(id) ON DELETE CASCADE
 );
