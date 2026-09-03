@@ -14,7 +14,7 @@ header('Access-Control-Allow-Headers: Content-Type, Authorization');
 $method = $_SERVER['REQUEST_METHOD'];
 
 $fullPath = parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH);
-$basePath = '/aweb3/horaire-eleve';
+$basePath = '/aweb3/horaire-eleve/api';
 $path = str_replace($basePath, '', $fullPath);
 
 
@@ -29,15 +29,14 @@ $pdo->connexion();
 if ($method === 'GET') {
 
     switch ($path) {
-        case '/api/classes':
-            echo json_encode(['yes' => 'ca marche']);
+        case '/classes':
             break;
 
-        case '/api/cours':
+        case '/cours':
             break;
 
 
-        case '/api/creneaux':
+        case '/creneaux':
             break;
 
 
@@ -50,7 +49,14 @@ if ($method === 'GET') {
 else if ($method === 'POST') {
 
     switch ($path) {
-        case '/api/creneaux':
+        case '/classes':
+            break;
+
+        case '/cours':
+            break;
+
+
+        case '/creneaux':
             break;
 
         default:
@@ -62,7 +68,14 @@ else if ($method === 'POST') {
 else if ($method === 'PUT') {
 
     switch ($path) {
-        case '/api/creneaux':
+        case '/classes':
+            break;
+
+        case '/cours':
+            break;
+
+
+        case '/creneaux':
             break;
 
         default:
@@ -74,7 +87,14 @@ else if ($method === 'PUT') {
 else if ($method === 'DELETE') {
 
     switch ($path) {
-        case '/api/creneaux':
+        case '/classes':
+            break;
+
+        case '/cours':
+            break;
+
+
+        case '/creneaux':
             break;
 
 
