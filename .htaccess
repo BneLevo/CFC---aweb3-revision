@@ -1,0 +1,5 @@
+RewriteEngine On
+
+RewriteRule ^api/classes/?$ api/index.php [L,QSA]
+RewriteRule ^api/cours/?$ api/index.php [L,QSA]
+RewriteRule ^api/creneaux/?$ api/index.php [L,QSA]
