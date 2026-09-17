@@ -1,8 +1,6 @@
-CREATE DATABASE IF NOT EXISTS horaire
-CHARACTER SET utf8mb4
-COLLATE utf8mb4_unicode_ci;
+CREATE DATABASE IF NOT EXISTS horaireEleve;
 
-USE horaire;
+USE horaireEleve;
 
 DROP TABLE IF EXISTS creneaux;
 DROP TABLE IF EXISTS cours;
