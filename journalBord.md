@@ -15,6 +15,13 @@
 - j'ai fait du backend
 - La structure du projet était mal fait donc j'ai restructuré
 
+### 03.09.2026
+
+* J'ai eu un problème de base de données. Je ne pouvais pas connecter à dbeaver. Le mot de passe n'était pas correct donc j'ai dû bien essayer et réflechir de mon de passe. ça m'a vraiment pris beacoup de temps.
+* Une erreur dans le .htaccess. Il était pas dans le bon endroit. Mais au debut je croyais que c'était un autre problème. ça m'a pris beacoup de temps aussi.
+* index.php j'ai structuré et j'ai mis tous les endpoints.
+* Créer des fonctions pour les cours et classes.
+
 ### 17.09.2026
 
 * J'étais bien en retard donc j'ai travaillé à max
